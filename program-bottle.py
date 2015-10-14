@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#coding:utf-8
+# -*- coding: utf-8 -*-
 import bottle
 import bottle_mysql
 import bottle_pgsql
@@ -45,7 +45,7 @@ def mysql():
     query = "select * from clientes;"
     resultado = consultamysql(query)
     return template('buscarmysql', resultado=resultado)
-	
+    
 
 
 def consultapostgres(query1=''): 
@@ -98,9 +98,7 @@ def consultaoracle(query2=''):
 @route('/oracle')
 def oracle():
     tabla  = raw_input('Escribe el nombre de la tabla: ') 
-    print tabla
     query2 = "select * from %s" % (tabla)
-    print query2
     resultado2 = consultaoracle(query2)
     return template('buscaroracle', resultado2=resultado2)
       
