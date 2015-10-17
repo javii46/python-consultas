@@ -16,8 +16,6 @@
 		<br>	
 		<br>
 		<br>
-		<br>
-		<br>
 			
 			%	for c1 in resultado:
 			% 	c1=str(c1)
