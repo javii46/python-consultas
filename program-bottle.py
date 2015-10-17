@@ -116,7 +116,7 @@ def consultamongo():
     cliente = MongoClient('mongodb://'+host+':27017/')         # conexión base de datos.
     base_datos = cliente["practica"]                           # indica la base de datos
     coleccion = base_datos["remoto"]                           # indica la colección 
-    resultado3 = coleccion                                     # introduce la coleccion en una 
+    resultado3 = coleccion                                     # introduce la coleccion en una variable que la pasaremos a la plantilla.
     return template('buscarmongo', resultado3=resultado3)
 
 
